@@ -2,8 +2,11 @@ public class Main {
     public static void main(String[] args) {
         int n = 5;
 
-        System.out.println("Pelny trojkat:");
+        System.out.println("Pelny trojkąt :");
         for (int i = 1; i <= n; i++) {
+            for (int j = i; j < n; j++) {
+                System.out.print(" ");
+            }
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
@@ -12,6 +15,9 @@ public class Main {
 
         System.out.println("\nPusty trojkat:");
         for (int i = 1; i <= n; i++) {
+            for (int j = i; j < n; j++) {
+                System.out.print(" ");
+            }
             for (int j = 1; j <= i; j++) {
                 if (i == n || j == 1 || j == i) {
                     System.out.print("*");
@@ -21,5 +27,5 @@ public class Main {
             }
             System.out.println();
         }
-    } 
-}     
+    }
+}
